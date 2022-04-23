@@ -7,6 +7,7 @@ inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
     console.log(myLeads);
     renderLeads();
+    inputEl.value = "";
 })
 
 // 1. Create a variable, listItems, to hold all the HTML for the list items
