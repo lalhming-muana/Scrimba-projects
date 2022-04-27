@@ -1,4 +1,20 @@
-let myLeads = []
+let myLeads = ["www.awesomeleads.com"]
+
+// myLeads = JSON.stringify(myLeads) you can flip back and forth between arrays and strings
+// console.log(typeof myLeads)
+
+// 1. Turn the myLeads string into an array
+// 2. Push a new value to the array
+// 3. Turn the array into a string again
+// 4. Console.log the string using typeof to verify that it's a string
+
+myLeads = JSON.stringify(myLeads)
+myLeads = JSON.parse(myLeads)
+myLeads.push("www.epic.com")
+myLeads = JSON.stringify(myLeads)
+console.log(typeof myLeads)
+
+
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
