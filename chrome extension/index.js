@@ -21,9 +21,15 @@ const ulEl = document.getElementById("ul-el")
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
+    inputEl.value = "";
+
+    localStorage.setItem("myLeads", JSON.stringify(myLeads) );
+    
     console.log(myLeads);
     renderLeads();
-    inputEl.value = "";
+
+    console.log(localStorage.getItem("myLeads"));
+    
 })
 
 // 1. Create a variable, listItems, to hold all the HTML for the list items
